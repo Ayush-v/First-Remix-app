@@ -1,4 +1,4 @@
-import { NavLink } from "@remix-run/react";
+import { NavLink, Link } from "@remix-run/react";
 
 const activeStyle = {
   textDecoration: "underline",
@@ -10,9 +10,7 @@ const NavBar = () => {
     <>
       <header className="flex justify-between items-center max-w-screen-2xl mx-auto p-8">
         <h1 className="text-3xl">
-          <NavLink to="/" end>
-            Logo
-          </NavLink>
+          <Link to="/">Logo</Link>
         </h1>
         <nav>
           <ul className="flex gap-5">
